@@ -6,9 +6,9 @@ z = False
 
 if not x or y:                          #not X = False и Y = False
     print(1)
-elif not x or not y and z:              # not X = False или (not Y = True и z = False)
+elif not x or (not y and z):              # not X = False или (not Y = True и z = False)
     print(2)
-elif not x or y or not y and x:         # (not X = False) или (Y = False) или (not Y = True и X = True)
+elif not x or y or (not y and x):         # (not X = False) или (Y = False) или (not Y = True и X = True)
     print(3)
 else:
     print(4)
