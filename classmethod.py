@@ -14,16 +14,20 @@ class Dog():
         #Инициализируем аттрибуты имя и возраст
         self.name = name
         self.age = age
+        print("Собака",  name, "создана")
 
-        def sit(self):
-        # собака садится по команде
-        print(self.name.title() + "села на место")      # title - будет писаться с большой буквы
+    def sit(self):
+        print(self.name.title() + " села на место")
 
-        def jump(self):         # собака прыгает
-        print(self.name.title() + "подпрыгнула")
+    def jump(self):
+        print(self.name.title() + " подпрыгнула")
 
 # Теперь создаем обьект по инструкции нашей (class Dog()). Этот обьект называется экземпляр класса
 
-my_dog = Dog('Archi', 5)           # это создали экземпляр класса Dog
+my_dog_1 = Dog('archi', 5)           # это создали экземпляр класса Dog
+my_dog_2 = Dog('ben', 2)
 
-print(my_dog.name)
+my_dog_1.sit() # обращаемся напрямую к методу, через точку
+my_dog_2.jump()
+
+# print(my_dog.age)
